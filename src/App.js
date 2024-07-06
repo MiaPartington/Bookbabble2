@@ -26,17 +26,17 @@ function App() {
       <Navbar />
       <div className='content'>
       <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/About" element={<About />} />
-            <Route path="/Blog" element={<Blog />} />
-            <Route path="/Marketplace" element={<Marketplace />} />
-            <Route path='/Sales' element={<Sales />}/>
-            <Route path='/Action' element={<Action />}/>
-            <Route path='/Romance' element={<Romance />}/>
-            <Route path='/Education' element={<Education />}/>
-            <Route path='/Jaws' element={<Jaws />}/>
-            <Route path='/Book1984' element={<Book1984 />}/>
-            <Route path='/Road' element={<Road />}/>
+            <Route path="/Bookbabble/" element={<Home />} />
+            <Route path="/Bookbabble/About" element={<About />} />
+            <Route path="/Bookbabble/Blog" element={<Blog />} />
+            <Route path="/Bookbabble/Marketplace" element={<Marketplace />} />
+            <Route path='/Bookbabble/Sales' element={<Sales />}/>
+            <Route path='/Bookbabble/Action' element={<Action />}/>
+            <Route path='/Bookbabble/Romance' element={<Romance />}/>
+            <Route path='/Bookbabble/Education' element={<Education />}/>
+            <Route path='/Bookbabble/Jaws' element={<Jaws />}/>
+            <Route path='/Bookbabble/Book1984' element={<Book1984 />}/>
+            <Route path='/Bookbabble/Road' element={<Road />}/>
             
           </Routes>
         <div className='btm'>
