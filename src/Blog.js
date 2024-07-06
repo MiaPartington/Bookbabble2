@@ -10,7 +10,7 @@ const Blog = () => {
       <img src="/pics/theRoad.jpg" alt="The Road by Cormac McCarthy"/>
     </div>
     <div class="blog-content">
-      <h2><a href="#">The Road by Cormac McCarthy</a></h2>
+      <h2><a href="/Road">The Road by Cormac McCarthy</a></h2>
       <p>Discussion group</p>
       <p>Post description about the book and its discussion.</p>
       <div class="blog-meta">
@@ -24,7 +24,7 @@ const Blog = () => {
       <img src="/pics/1984.jpg" alt="1984 by George Orwell"/>
     </div>
     <div class="blog-content">
-      <h2><a href="#">1984 by George Orwell</a></h2>
+      <h2><a href="/Book1984">1984 by George Orwell</a></h2>
       <p>Discussion group</p>
       <p>Discussion about the book's themes and characters.</p>
       <div class="blog-meta">
@@ -43,7 +43,7 @@ const Blog = () => {
       <p>Discussion about the book's themes and characters.</p>
       <div class="blog-meta">
         <span>56 likes</span>
-        <span>5 comments</span>
+        <span>2 comments</span>
       </div>
     </div>
   </div>

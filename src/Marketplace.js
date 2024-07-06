@@ -48,8 +48,11 @@ const Marketplace = () => {
           </div>
           <div className="col-md-8 order-md-2">
             <h2>The Road</h2>
-            <p>A subheading for this section, as long or as short as you like</p>
-            <button className="btn btn-dark" onClick={() => showModal('The Road', '/pics/theRoad.jpg', 'A subheading for this section, as long or as short as you like')}>Borrow</button>
+            <p>"The Road," a novel by Cormac McCarthy published in 2006, follows a father and son journeying through a post-apocalyptic landscape, facing severe hardships and dangers as they seek safety and survival.
+
+About the Author:
+Cormac McCarthy (1933-2023) was an American author renowned for his distinctive writing style and exploration of themes like survival and morality, with notable works including "The Road" and "No Country for Old Men."</p>
+            <button className="btn btn-dark" onClick={() => showModal('The Road', '/pics/theRoad.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
           </div>
         </div>
         <div className="row book-item">
@@ -58,8 +61,11 @@ const Marketplace = () => {
           </div>
           <div className="col-md-8 order-md-1">
             <h2>1984</h2>
-            <p>Another subheading—maybe it’s related to the image on the left, or the button below</p>
-            <button className="btn btn-dark" onClick={() => showModal('1984', '/pics/1984.jpg', 'Another subheading—maybe it’s related to the image on the left, or the button below')}>Borrow</button>
+            <p>"1984," a dystopian novel by George Orwell published in 1949, depicts a totalitarian society under the rule of Big Brother. The protagonist, Winston Smith, struggles with oppression and surveillance, ultimately seeking rebellion and truth.
+
+About the Author:
+George Orwell (1903-1950) was a British writer and journalist known for his critical works on social injustice and totalitarianism, including "1984" and "Animal Farm."</p>
+            <button className="btn btn-dark" onClick={() => showModal('1984', '/pics/1984.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
           </div>
         </div>
         <div className="row book-item">
@@ -68,8 +74,11 @@ const Marketplace = () => {
           </div>
           <div className="col-md-8 order-md-2">
             <h2>Jaws</h2>
-            <p>Another subheading—maybe it’s related to the image on the left, or the button below</p>
-            <button className="btn btn-dark" onClick={() => showModal('Jaws', '/pics/Jaws.jpg', 'Another subheading—maybe it’s related to the image on the left, or the button below')}>Borrow</button>
+            <p>"Jaws," a 1974 novel by Peter Benchley, follows a great white shark that terrorizes the fictional Amity Island, prompting Police Chief Brody, marine biologist Hooper, and shark hunter Quint to team up and hunt it down.
+
+About the Author:
+Peter Benchley (1940-2006) was an American author best known for writing "Jaws," which was later adapted into a highly successful film by Steven Spielberg.</p>
+            <button className="btn btn-dark" onClick={() => showModal('Jaws', '/pics/Jaws.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
           </div>
         </div>
         {/* <div className="row book-item">
@@ -107,8 +116,8 @@ const Marketplace = () => {
                       <div className="col-md-6">
                         <h2>{modalData.name}</h2>
                         <p>{modalData.description}</p>
-                        <button className="btn btn-dark" onClick={handleBorrowClick}>Borrow</button>
-                        <p>Text box for additional details or fine print</p>
+                        <button className="btn btn-dark" onClick={handleBorrowClick}>Continue</button>
+                        {/* <p>Text box for additional details or fine print</p> */}
                       </div>
                     </div>
                     <div className="mt-5">

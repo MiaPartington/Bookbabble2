@@ -14,6 +14,8 @@ import Education from './Education';
 import Action from './Action';
 // import Theroad from './Theroad';
 import Jaws from './Jaws';
+import Book1984 from './Book1984';
+import Road from './Road';
 
 
 
@@ -38,6 +40,9 @@ function App() {
             <Route path='/Education' element={<Education />}/>
             {/* <Route path='/Theroad' element={<Theroad />}/> */}
             <Route path='/Jaws' element={<Jaws />}/>
+            <Route path='/Book1984' element={<Book1984 />}/>
+            <Route path='/Road' element={<Road />}/>
+            
           </Routes>
         <div className='btm'>
         <Footer />
