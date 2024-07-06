@@ -21,7 +21,7 @@ import Road from './Road';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Bookbabble">
     <div className="App">
       <Navbar />
       <div className='content'>
