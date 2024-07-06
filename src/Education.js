@@ -1,5 +1,5 @@
 // import React from 'react';
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import './Education.css';
 
 
@@ -26,10 +26,10 @@ const Education = () => {
     setProgress(66); 
   };
 
-  const handleUserInfoClick = () => {
-    setModalSection('userInfo');
-    setProgress(100); 
-  };
+  // const handleUserInfoClick = () => {
+  //   setModalSection('userInfo');
+  //   setProgress(100); 
+  // };
 
   const handleSubmitClick = () => {
     setModalSection('thankYou');
@@ -44,7 +44,7 @@ const Education = () => {
       <div className="marketplace-content">
         <div className="row book-item">
           <div className="col-md-4 order-md-1">
-            <img src="/pics/calc.jpg" className="img-fluid" alt="Book 1" />
+            <img src="/pics/calc.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-2">
             <h2>Calculus Early Vectors</h2>
@@ -54,7 +54,7 @@ const Education = () => {
         </div>
         <div className="row book-item">
           <div className="col-md-4 order-md-2">
-            <img src="/pics/edu.jpg" className="img-fluid" alt="Book 2" />
+            <img src="/pics/edu.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-1">
             <h2>Education Psychology</h2>
@@ -64,7 +64,7 @@ const Education = () => {
         </div>
         <div className="row book-item">
           <div className="col-md-4 order-md-1">
-            <img src="/pics/oxf.jpg" className="img-fluid" alt="Book 3" />
+            <img src="/pics/oxf.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-2">
             <h2>Oxford Dictionary</h2>
@@ -92,7 +92,7 @@ const Education = () => {
                   <div>
                     <div className="row">
                       <div className="col-md-6">
-                        <img src={modalData.image} className="img-fluid" alt="Product Image" />
+                        <img src={modalData.image} className="img-fluid" alt="Product" />
                       </div>
                       <div className="col-md-6">
                         <h2>{modalData.name}</h2>

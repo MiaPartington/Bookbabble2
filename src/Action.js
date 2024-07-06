@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import './Action.css';
 
 const Action = () => {
@@ -24,10 +24,10 @@ const Action = () => {
     setProgress(66); 
   };
 
-  const handleUserInfoClick = () => {
-    setModalSection('userInfo');
-    setProgress(100); 
-  };
+  // const handleUserInfoClick = () => {
+  //   setModalSection('userInfo');
+  //   setProgress(100); 
+  // };
 
   const handleSubmitClick = () => {
     setModalSection('thankYou');
@@ -90,7 +90,7 @@ const Action = () => {
                   <div>
                     <div className="row">
                       <div className="col-md-6">
-                        <img src={modalData.image} className="img-fluid" alt="Product Image" />
+                        <img src={modalData.image} className="img-fluid" alt="Product" />
                       </div>
                       <div className="col-md-6">
                         <h2>{modalData.name}</h2>

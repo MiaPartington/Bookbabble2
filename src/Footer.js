@@ -6,9 +6,15 @@ const Footer = () => {
         <div className="container text-center">
           <p>&copy; 2024 BookBabble</p>
           <div className="social-icons">
-            <a href="#" className="text-dark"><i className="bi bi-twitter"></i></a>
-            <a href="#" className="text-dark"><i className="bi bi-facebook"></i></a>
-            <a href="#" className="text-dark"><i className="bi bi-instagram"></i></a>
+          <button className="text-dark" style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }} aria-label="Twitter">
+  <i className="bi bi-twitter"></i>
+</button>
+<button className="text-dark" style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }} aria-label="Facebook">
+  <i className="bi bi-facebook"></i>
+</button>
+<button className="text-dark" style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }} aria-label="Instagram">
+  <i className="bi bi-instagram"></i>
+</button>
           </div>
           <div className="links">
             <a href="/">Home</a>

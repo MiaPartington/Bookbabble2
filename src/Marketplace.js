@@ -1,7 +1,7 @@
 // import React from 'react';
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import './Marketplace.css';
-import $ from 'jquery';
+// import $ from 'jquery';
 
 const Marketplace = () => {
   const [modalData, setModalData] = useState({ name: '', image: '', description: '' });
@@ -26,10 +26,10 @@ const Marketplace = () => {
     setProgress(66); 
   };
 
-  const handleUserInfoClick = () => {
-    setModalSection('userInfo');
-    setProgress(100); 
-  };
+  // const handleUserInfoClick = () => {
+  //   setModalSection('userInfo');
+  //   setProgress(100); 
+  // };
 
   const handleSubmitClick = () => {
     setModalSection('thankYou');
@@ -44,7 +44,7 @@ const Marketplace = () => {
       <div className="marketplace-content">
         <div className="row book-item">
           <div className="col-md-4 order-md-1">
-            <img src="/pics/theRoad.jpg" className="img-fluid" alt="Book 1" />
+            <img src="/pics/theRoad.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-2">
             <h2>The Road</h2>
@@ -57,7 +57,7 @@ Cormac McCarthy (1933-2023) was an American author renowned for his distinctive 
         </div>
         <div className="row book-item">
           <div className="col-md-4 order-md-2">
-            <img src="/pics/1984.jpg" className="img-fluid" alt="Book 2" />
+            <img src="/pics/1984.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-1">
             <h2>1984</h2>
@@ -70,7 +70,7 @@ George Orwell (1903-1950) was a British writer and journalist known for his crit
         </div>
         <div className="row book-item">
           <div className="col-md-4 order-md-1">
-            <img src="/pics/Jaws.jpg" className="img-fluid" alt="Book 3" />
+            <img src="/pics/Jaws.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-2">
             <h2>Jaws</h2>
@@ -111,7 +111,7 @@ Peter Benchley (1940-2006) was an American author best known for writing "Jaws,"
                   <div>
                     <div className="row">
                       <div className="col-md-6">
-                        <img src={modalData.image} className="img-fluid" alt="Product Image" />
+                        <img src={modalData.image} className="img-fluid" alt="Product " />
                       </div>
                       <div className="col-md-6">
                         <h2>{modalData.name}</h2>

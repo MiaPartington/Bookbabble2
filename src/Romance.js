@@ -23,10 +23,10 @@ const Romance = () => {
     setProgress(66); 
   };
 
-  const handleUserInfoClick = () => {
-    setModalSection('userInfo');
-    setProgress(100); 
-  };
+  // const handleUserInfoClick = () => {
+  //   setModalSection('userInfo');
+  //   setProgress(100); 
+  // };
 
   const handleSubmitClick = () => {
     setModalSection('thankYou');
@@ -41,7 +41,7 @@ const Romance = () => {
         <div className="marketplace-content">
           <div className="row book-item">
             <div className="col-md-4 order-md-1">
-              <img src="/pics/DBD.jpg" className="img-fluid" alt="Book 1" />
+              <img src="/pics/DBD.jpg" className="img-fluid" alt="book"/>
             </div>
             <div className="col-md-8 order-md-2">
               <h2>Don't Back Down</h2>
@@ -58,7 +58,7 @@ const Romance = () => {
           </div>
           <div className="row book-item">
             <div className="col-md-4 order-md-2">
-              <img src="/pics/Bmoon.jpg" className="img-fluid" alt="Book 2" />
+              <img src="/pics/Bmoon.jpg" className="img-fluid" alt="book"/>
             </div>
             <div className="col-md-8 order-md-1">
               <h2>Blue Moon</h2>
@@ -75,7 +75,7 @@ const Romance = () => {
           </div>
           <div className="row book-item">
             <div className="col-md-4 order-md-1">
-              <img src="/pics/nightwork.jpg" className="img-fluid" alt="Book 3" />
+              <img src="/pics/nightwork.jpg" className="img-fluid" alt="book"/>
             </div>
             <div className="col-md-8 order-md-2">
               <h2>Nightwork</h2>
@@ -110,7 +110,7 @@ const Romance = () => {
                   <div>
                     <div className="row">
                       <div className="col-md-6">
-                        <img src={modalData.image} className="img-fluid" alt="Product Image" />
+                        <img src={modalData.image} className="img-fluid" alt="Product" />
                       </div>
                       <div className="col-md-6">
                         <h2>{modalData.name}</h2>
