@@ -41,7 +41,7 @@ const Romance = () => {
         <div className="marketplace-content">
           <div className="row book-item">
             <div className="col-md-4 order-md-1">
-              <img src="/pics/DBD.jpg" className="img-fluid" alt="book"/>
+              <img src="./pics/DBD.jpg" className="img-fluid" alt="book"/>
             </div>
             <div className="col-md-8 order-md-2">
               <h2>Don't Back Down</h2>
@@ -53,12 +53,12 @@ const Romance = () => {
 
 
 </p>
-              <button className="btn btn-dark" onClick={() => showModal('Dont Back Down', '/pics/DBD.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+              <button className="btn btn-dark" onClick={() => showModal('Dont Back Down', './pics/DBD.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
             </div>
           </div>
           <div className="row book-item">
             <div className="col-md-4 order-md-2">
-              <img src="/pics/Bmoon.jpg" className="img-fluid" alt="book"/>
+              <img src="./pics/Bmoon.jpg" className="img-fluid" alt="book"/>
             </div>
             <div className="col-md-8 order-md-1">
               <h2>Blue Moon</h2>
@@ -70,12 +70,12 @@ const Romance = () => {
 
 
 </p>
-              <button className="btn btn-dark" onClick={() => showModal('Blue Moon', '/pics/Bmoon.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+              <button className="btn btn-dark" onClick={() => showModal('Blue Moon', './pics/Bmoon.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
             </div>
           </div>
           <div className="row book-item">
             <div className="col-md-4 order-md-1">
-              <img src="/pics/nightwork.jpg" className="img-fluid" alt="book"/>
+              <img src="./pics/nightwork.jpg" className="img-fluid" alt="book"/>
             </div>
             <div className="col-md-8 order-md-2">
               <h2>Nightwork</h2>
@@ -87,7 +87,7 @@ const Romance = () => {
 
 
 </p>
-              <button className="btn btn-dark" onClick={() => showModal('NightWork', '/pics/nightwork.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+              <button className="btn btn-dark" onClick={() => showModal('NightWork', './pics/nightwork.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
             </div>
           </div>
         </div>
@@ -122,9 +122,9 @@ const Romance = () => {
                     <div className="mt-5">
                       <h3>Related Books</h3>
                       <div className="row" id="relatedBooks">
-                        <img src="/pics/rom1.jpg" className="img-fluid" alt="Book 2" />
-                        <img src="/pics/rom2.jpg" className="img-fluid" alt="Book 1" />
-                        <img src="/pics/3.jpg" className="img-fluid" alt="Book 3" />
+                        <img src="./pics/rom1.jpg" className="img-fluid" alt="Book 2" />
+                        <img src="./pics/rom2.jpg" className="img-fluid" alt="Book 1" />
+                        <img src="./pics/3.jpg" className="img-fluid" alt="Book 3" />
                       </div>
                     </div>
                   </div>

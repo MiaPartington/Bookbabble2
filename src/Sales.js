@@ -42,32 +42,32 @@ const [modalData, setModalData] = useState({ name: '', image: '', description: '
         <div class="marketplace-content">
         <div className="row book-item">
           <div className="col-md-4 order-md-1">
-            <img src="/pics/dreamLand.jpg" className="img-fluid" alt="book"/>
+            <img src="./pics/dreamLand.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-2">
             <h2>Dreamland</h2>
             <p>"Dreamland" by Nicholas Sparks is a touching and evocative romance novel that intertwines the lives of two couples. Colby Mills, a farmer with dreams of a music career, meets Morgan Lee, an aspiring singer with big city aspirations, while performing in a bar in Florida. Their whirlwind romance blossoms against the backdrop of their personal dreams and struggles. Simultaneously, the story follows Beverly, a young woman fleeing from an abusive marriage with her six-year-old son. As Colby and Morgan's relationship deepens, their lives become unexpectedly connected to Beverly's journey, leading to a poignant and dramatic conclusion. "Dreamland" explores themes of love, dreams, and the courage to face life's challenges.</p>
-            <button className="btn btn-dark" onClick={() => showModal('Dreamland', '/pics/dreamLand.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <button className="btn btn-dark" onClick={() => showModal('Dreamland', './pics/dreamLand.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
           </div>
         </div>
         <div className="row book-item">
           <div className="col-md-4 order-md-2">
-            <img src="/pics/hofas.jpg" className="img-fluid" alt="book"/>
+            <img src="./pics/hofas.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-1">
             <h2>House of Flame and Shadow</h2>
             <p>"House of Flame and Shadow" by Sarah J. Maas is the third book in the Crescent City series. It follows Bryce Quinlan and Hunt Athalar as they navigate the intricate and dangerous political landscape of their world. The story delves deeper into their quest for answers about their pasts and the growing threats to their city. With allies and enemies both old and new, Bryce and Hunt must confront ancient powers and hidden secrets that could change their lives and the fate of Crescent City forever. This installment combines action, romance, and rich world-building, continuing the epic saga with high stakes and emotional depth.</p>
-            <button className="btn btn-dark" onClick={() => showModal('House of Flame and Shadow', '/pics/hofas.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <button className="btn btn-dark" onClick={() => showModal('House of Flame and Shadow', './pics/hofas.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
           </div>
         </div>
         <div className="row book-item">
           <div className="col-md-4 order-md-1">
-            <img src="/pics/mercuryRising.jpg" className="img-fluid" alt="book"/>
+            <img src="./pics/mercuryRising.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-2">
             <h2>Mercury Rising</h2>
             <p>"Mercury Rising" by R.W.W. Greene is a science fiction novel set in an alternate 1970s where a failed Apollo mission results in Earth being threatened by an alien invasion. This geopolitical crisis forces humanity to unite and develop a space defense system. The protagonist, Brooklyn Lamontagne, is a down-and-out con artist who finds himself unexpectedly recruited into this interstellar conflict. As he navigates this new reality, Brooklyn grapples with his past, confronts the possibility of redemption, and plays a crucial role in the fight against the extraterrestrial threat. The novel blends retro-futurism, action, and humor, creating a compelling story of survival and second chances.</p>
-            <button className="btn btn-dark" onClick={() => showModal('Mercury Rising', '/pics/mercuryRising.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <button className="btn btn-dark" onClick={() => showModal('Mercury Rising', './pics/mercuryRising.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
           </div>
         </div>
         </div>
@@ -133,9 +133,9 @@ const [modalData, setModalData] = useState({ name: '', image: '', description: '
                     <div className="mt-5">
                       <h3>Related Books</h3>
                       <div className="row" id="relatedBooks">
-                        <img src="/pics/Bmoon.jpg" className="img-fluid" alt="Book 2" />
-                        <img src="/pics/DBD.jpg" className="img-fluid" alt="Book 1" />
-                        <img src="/pics/nightwork.jpg" className="img-fluid" alt="Book 3" />
+                        <img src="./pics/Bmoon.jpg" className="img-fluid" alt="Book 2" />
+                        <img src="./pics/DBD.jpg" className="img-fluid" alt="Book 1" />
+                        <img src="./pics/nightwork.jpg" className="img-fluid" alt="Book 3" />
                       </div>
                     </div>
                   </div>

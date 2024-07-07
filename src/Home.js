@@ -1,15 +1,16 @@
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return ( 
         <>
          <header className="header-custom">
-    <img src={'/pics/books.jpg'} alt="Background" className="background-image" />
+    <img src={'./pics/books.jpg'} alt="Background" className="background-image" />
     <div className="overlay">
       <div className="container">
         <h1 className="display-4">BookBabble</h1>
         <p className="lead">Connect with fellow book lovers</p>
-        <a href="/About" className="btn btn-light">Learn More</a>
+        <Link to="/About" className="btn btn-light">Learn More</Link>
       </div>
     </div>
   </header>
@@ -19,7 +20,7 @@ const Home = () => {
     <div className="row">
       <div className="col-md-4">
         <div className="card book-item">
-          <img src="/pics/theRoad.jpg" className="card-img-top" alt="The Road by Cormac McCarthy" />
+          <img src="./pics/theRoad.jpg" className="card-img-top" alt="The Road by Cormac McCarthy" />
           <div className="card-body">
             <h5 className="card-title">The Road by Cormac McCarthy</h5>
             <p className="card-text">$10.99</p>
@@ -32,7 +33,7 @@ Cormac McCarthy (1933-2023) was an American author renowned for his distinctive 
       </div>
       <div className="col-md-4">
         <div className="card book-item">
-          <img src="/pics/1984.jpg" className="card-img-top" alt="1984 by George Orwell" />
+          <img src="./pics/1984.jpg" className="card-img-top" alt="1984 by George Orwell" />
           <div className="card-body">
             <h5 className="card-title">1984 by George Orwell</h5>
             <p className="card-text">$11.99</p>
@@ -45,7 +46,7 @@ George Orwell (1903-1950) was a British writer and journalist known for his crit
       </div>
       <div className="col-md-4">
         <div className="card book-item">
-          <img src="/pics/jaws.jpg" className="card-img-top" alt="Jaws by Peter Benchley" />
+          <img src="./pics/jaws.jpg" className="card-img-top" alt="Jaws by Peter Benchley" />
           <div className="card-body">
             <h5 className="card-title">Jaws by Peter Benchley</h5>
             <p className="card-text">$13.99</p>
@@ -71,7 +72,7 @@ Peter Benchley (1940-2006) was an American author best known for writing "Jaws,"
     <div className="row">
       <div className="col-md-4 mb-4">
         <div className="card book-item">
-          <img src="/pics/dreamLand.jpg" className="card-img-top" alt="Dreamland by Nicholas Sparks" />
+          <img src="./pics/dreamLand.jpg" className="card-img-top" alt="Dreamland by Nicholas Sparks" />
           <div className="card-body">
             <h5 className="card-title">Dreamland by Nicholas Sparks</h5>
             <p className="card-text">$15.99</p>
@@ -84,7 +85,7 @@ Nicholas Sparks (born 1965) is an American author known for his romantic novels,
       </div>
       <div className="col-md-4 mb-4">
         <div className="card book-item">
-          <img src="/pics/hofas.jpg" className="card-img-top" alt="House of Flame and Shadow by Sarah J. Maas" />
+          <img src="./pics/hofas.jpg" className="card-img-top" alt="House of Flame and Shadow by Sarah J. Maas" />
           <div className="card-body">
             <h5 className="card-title">House of Flame and Shadow by Sarah J. Maas</h5>
             <p className="card-text">$22.00</p>
@@ -104,7 +105,7 @@ Sarah J. Maas (born 1986) is an American author renowned for her bestselling fan
       </div>
       <div className="col-md-4 mb-4">
         <div className="card book-item">
-          <img src="/pics/mercuryRising.jpg" className="card-img-top" alt="Mercury Rising by R.A. Barnes" />
+          <img src="./pics/mercuryRising.jpg" className="card-img-top" alt="Mercury Rising by R.A. Barnes" />
           <div className="card-body">
             <h5 className="card-title">Mercury Rising by R.W.W Greene</h5>
             <p className="card-text">$9.99</p>

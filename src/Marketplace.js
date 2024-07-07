@@ -44,7 +44,7 @@ const Marketplace = () => {
       <div className="marketplace-content">
         <div className="row book-item">
           <div className="col-md-4 order-md-1">
-            <img src="/pics/theRoad.jpg" className="img-fluid" alt="book"/>
+            <img src="./pics/theRoad.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-2">
             <h2>The Road</h2>
@@ -52,12 +52,12 @@ const Marketplace = () => {
 
 About the Author:
 Cormac McCarthy (1933-2023) was an American author renowned for his distinctive writing style and exploration of themes like survival and morality, with notable works including "The Road" and "No Country for Old Men."</p>
-            <button className="btn btn-dark" onClick={() => showModal('The Road', '/pics/theRoad.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <button className="btn btn-dark" onClick={() => showModal('The Road', './pics/theRoad.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
           </div>
         </div>
         <div className="row book-item">
           <div className="col-md-4 order-md-2">
-            <img src="/pics/1984.jpg" className="img-fluid" alt="book"/>
+            <img src="./pics/1984.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-1">
             <h2>1984</h2>
@@ -65,12 +65,12 @@ Cormac McCarthy (1933-2023) was an American author renowned for his distinctive 
 
 About the Author:
 George Orwell (1903-1950) was a British writer and journalist known for his critical works on social injustice and totalitarianism, including "1984" and "Animal Farm."</p>
-            <button className="btn btn-dark" onClick={() => showModal('1984', '/pics/1984.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <button className="btn btn-dark" onClick={() => showModal('1984', './pics/1984.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
           </div>
         </div>
         <div className="row book-item">
           <div className="col-md-4 order-md-1">
-            <img src="/pics/Jaws.jpg" className="img-fluid" alt="book"/>
+            <img src="./pics/jaws.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-2">
             <h2>Jaws</h2>
@@ -78,7 +78,7 @@ George Orwell (1903-1950) was a British writer and journalist known for his crit
 
 About the Author:
 Peter Benchley (1940-2006) was an American author best known for writing "Jaws," which was later adapted into a highly successful film by Steven Spielberg.</p>
-            <button className="btn btn-dark" onClick={() => showModal('Jaws', '/pics/Jaws.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <button className="btn btn-dark" onClick={() => showModal('Jaws', './pics/jaws.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
           </div>
         </div>
         {/* <div className="row book-item">
@@ -123,9 +123,9 @@ Peter Benchley (1940-2006) was an American author best known for writing "Jaws,"
                     <div className="mt-5">
                       <h3>Related Books</h3>
                       <div className="row" id="relatedBooks">
-                        <img src="/pics/Bmoon.jpg" className="img-fluid" alt="Book 2" />
-                        <img src="/pics/DBD.jpg" className="img-fluid" alt="Book 1" />
-                        <img src="/pics/nightwork.jpg" className="img-fluid" alt="Book 3" />
+                        <img src="./pics/Bmoon.jpg" className="img-fluid" alt="Book 2" />
+                        <img src="./pics/DBD.jpg" className="img-fluid" alt="Book 1" />
+                        <img src="./pics/nightwork.jpg" className="img-fluid" alt="Book 3" />
                       </div>
                     </div>
                   </div>

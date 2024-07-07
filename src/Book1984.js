@@ -19,7 +19,7 @@ const Book1984 = () => {
         <div className="post">
           <h2>1984 book review</h2>
           <p className="post-meta">Posted on <time dateTime="2024-07-01">July 1, 2024</time> by Arslan Ashraf, The Daily Post, The Weeknd, New York Times, and Katy Perry </p>
-          <img src="/pics/1984.jpg" alt="Book cover" className="post-image" />
+          <img src="./pics/1984.jpg" alt="Book cover" className="post-image" />
           {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p> */}
         </div>
   

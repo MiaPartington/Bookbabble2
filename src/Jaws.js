@@ -19,8 +19,8 @@ const Jaws = () => {
         <div className="post">
           <h2>Jaws book review</h2>
           <p className="post-meta">Posted on <time dateTime="2024-07-01">July 1, 2024</time> by Jane Doe and Avery Smith</p>
-          <img src="/pics/Jaws.jpg" alt="Book cover" className="post-image" />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+          <img src="./pics/jaws.jpg" alt="Book cover" className="post-image" />
+          {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p> */}
         </div>
   
         <div className="critiques">

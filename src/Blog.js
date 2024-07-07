@@ -1,5 +1,6 @@
 import React from 'react';
 import './Blog.css';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
   return (
@@ -7,10 +8,10 @@ const Blog = () => {
   <h1>Books of the week</h1>
   <div class="blog-post">
     <div class="blog-image">
-      <img src="/pics/theRoad.jpg" alt="The Road by Cormac McCarthy"/>
+      <img src="./pics/theRoad.jpg" alt="The Road by Cormac McCarthy"/>
     </div>
     <div class="blog-content">
-      <h2><a href="/Road">The Road by Cormac McCarthy</a></h2>
+      <h2><Link to="/Road">The Road by Cormac McCarthy</Link></h2>
       <p>Discussion group</p>
       <p>Post description about the book and its discussion.</p>
       <div class="blog-meta">
@@ -21,10 +22,10 @@ const Blog = () => {
   </div>
   <div class="blog-post">
     <div class="blog-image">
-      <img src="/pics/1984.jpg" alt="1984 by George Orwell"/>
+      <img src="./pics/1984.jpg" alt="1984 by George Orwell"/>
     </div>
     <div class="blog-content">
-      <h2><a href="/Book1984">1984 by George Orwell</a></h2>
+      <h2><Link to="/Book1984">1984 by George Orwell</Link></h2>
       <p>Discussion group</p>
       <p>Discussion about the book's themes and characters.</p>
       <div class="blog-meta">
@@ -35,10 +36,10 @@ const Blog = () => {
   </div>
   <div class="blog-post">
     <div class="blog-image">
-      <img src="/pics/Jaws.jpg" alt="Jaws by Peter Benchley"/>
+      <img src="./pics/jaws.jpg" alt="Jaws by Peter Benchley"/>
     </div>
     <div class="blog-content">
-      <h2><a href="/Jaws">Jaws by Peter Benchley</a></h2>
+      <h2><Link to="/Jaws">Jaws by Peter Benchley</Link></h2>
       <p>Discussion group</p>
       <p>Discussion about the book's themes and characters.</p>
       <div class="blog-meta">

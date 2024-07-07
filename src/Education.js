@@ -44,32 +44,32 @@ const Education = () => {
       <div className="marketplace-content">
         <div className="row book-item">
           <div className="col-md-4 order-md-1">
-            <img src="/pics/calc.jpg" className="img-fluid" alt="book"/>
+            <img src="./pics/calc.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-2">
             <h2>Calculus Early Vectors</h2>
             <p>"Calculus and Early Vectors" is a foundational textbook that introduces the principles of calculus alongside vector analysis. It covers topics such as limits, derivatives, integrals, and the fundamental theorems of calculus, while also integrating vector concepts like vector operations, dot products, and cross products. The book emphasizes the application of calculus in solving real-world problems involving vectors, making it essential for students in mathematics, physics, and engineering. Through a combination of theoretical explanations, worked examples, and exercises, "Calculus and Early Vectors" aims to build a solid understanding of both calculus and vector analysis from the ground up.</p>
-            <button className="btn btn-dark" onClick={() => showModal('Calculus Early Vectors', '/pics/calc.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <button className="btn btn-dark" onClick={() => showModal('Calculus Early Vectors', './pics/calc.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
           </div>
         </div>
         <div className="row book-item">
           <div className="col-md-4 order-md-2">
-            <img src="/pics/edu.jpg" className="img-fluid" alt="book"/>
+            <img src="./pics/edu.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-1">
             <h2>Education Psychology</h2>
             <p>"Educational Psychology" is a field of study that explores how people learn and the best practices for teaching. It examines the cognitive, emotional, and social processes involved in learning throughout the lifespan. Topics include motivation, development, classroom management, assessment, and instructional strategies. By understanding these principles, educators can create more effective learning environments that cater to the diverse needs of students. The field integrates theories from psychology to address practical issues in education, aiming to improve educational outcomes and foster a supportive atmosphere for both teachers and students.</p>
-            <button className="btn btn-dark" onClick={() => showModal('Education Psychology', '/pics/edu.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <button className="btn btn-dark" onClick={() => showModal('Education Psychology', './pics/edu.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
           </div>
         </div>
         <div className="row book-item">
           <div className="col-md-4 order-md-1">
-            <img src="/pics/oxf.jpg" className="img-fluid" alt="book"/>
+            <img src="./pics/oxf.jpg" className="img-fluid" alt="book"/>
           </div>
           <div className="col-md-8 order-md-2">
             <h2>Oxford Dictionary</h2>
             <p>"The Oxford Dictionary" is a comprehensive and authoritative reference work that provides definitions, pronunciations, and detailed information on the usage of the English language. Renowned for its scholarly rigor and extensive coverage, it includes thousands of words, phrases, and meanings, ranging from everyday vocabulary to specialized terms across various fields. The dictionary also offers historical insights through etymologies, tracing the origins and evolution of words. Frequently updated to reflect contemporary language changes, "The Oxford Dictionary" is an essential resource for students, writers, academics, and anyone seeking a deep understanding of English.</p>
-            <button className="btn btn-dark" onClick={() => showModal('Oxford Dictionary', '/pics/oxf.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <button className="btn btn-dark" onClick={() => showModal('Oxford Dictionary', './pics/oxf.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
           </div>
         </div>
       </div>
@@ -104,9 +104,9 @@ const Education = () => {
                     <div className="mt-5">
                       <h3>Related Books</h3>
                       <div className="row" id="relatedBooks">
-                        <img src="/pics/vcalc.jpg" className="img-fluid" alt="Book 2" />
-                        <img src="/pics/calc2.jpg" className="img-fluid" alt="Book 1" />
-                        <img src="/pics/besch.jpg" className="img-fluid" alt="Book 3" />
+                        <img src="./pics/vcalc.jpg" className="img-fluid" alt="Book 2" />
+                        <img src="./pics/calc2.jpg" className="img-fluid" alt="Book 1" />
+                        <img src="./pics/besch.jpg" className="img-fluid" alt="Book 3" />
                       </div>
                     </div>
                   </div>

@@ -12,7 +12,7 @@ const About = () => {
 </p>
       </div>
       <div class="img col-md-4">
-        <img src="/pics/library.jpg" alt="Library"/>
+        <img src="./pics/library.jpg" alt="Library"/>
       </div>
     </div>
   </section>
