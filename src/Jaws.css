@@ -90,8 +90,8 @@
 }
 
 .btn-zoom {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #000;
+  color: #000;
   border: none;
   padding: 10px 20px;
   font-size: 1em;
@@ -101,39 +101,7 @@
 }
 
 .btn-zoom:hover {
-  background-color: #0056b3;
-}
-
-.zoom-meeting {
-  border-top: 2px solid #ddd;
-  padding-top: 20px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.zoom-meeting h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.zoom-meeting p {
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.btn-zoom {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1em;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn-zoom:hover {
-  background-color: #0056b3;
+  background-color: #4b4949;
 }
 
 .modal {
@@ -193,7 +161,7 @@
 .modal-content-jaws button {
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
+  background-color: #000;
   color: white;
   border: none;
   border-radius: 4px;
@@ -202,7 +170,7 @@
 }
 
 .modal-content-jaws button:hover {
-  background-color: #0056b3;
+  background-color: #4b4949;
 }
 
 .modal.show {

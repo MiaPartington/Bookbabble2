@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (  
         <footer className="footer">
-        <div className="container text-center">
+        <div className="container-footer text-center">
           <p>&copy; 2024 BookBabble</p>
           <div className="social-icons">
           <button className="text-dark" style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }} aria-label="Twitter">

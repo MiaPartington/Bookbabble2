@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 import './Book1984.css';
+import the1984 from './components/the1984.jpg';
+import { Link } from 'react-router-dom';
 
 
 
 const Book1984 = () => {
     const [isModalVisible, setIsModalVisible] = useState(false);
+    const [isConfirmationVisible, setConfirmationVisible] = useState(false);
+    const [meetingDetails, setMeetingDetails] = useState({
+    meetingName: '',
+    meetingDate: '',
+    meetingTime: '',
+    participants: ''
+  });
   
     const openModal = () => {
       setIsModalVisible(true);
@@ -13,13 +22,29 @@ const Book1984 = () => {
     const closeModal = () => {
       setIsModalVisible(false);
     };
+
+    const zoomLink = "https://zoom.us/j/1234567890";
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      setIsModalVisible(false);
+      setConfirmationVisible(true);
+    };
+
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setMeetingDetails({ ...meetingDetails, [name]: value });
+    };
+
+    const closeConfirmation = () => setConfirmationVisible(false);
   
     return (
       <div className="container-Book1984">
+         <Link to="/Blog" className="btn-back"><i class="bi bi-arrow-left"></i></Link> 
         <div className="post">
           <h2>1984 book review</h2>
           <p className="post-meta">Posted on <time dateTime="2024-07-01">July 1, 2024</time> by Arslan Ashraf, The Daily Post, The Weeknd, New York Times, and Katy Perry </p>
-          <img src="./pics/1984.jpg" alt="Book cover" className="post-image" />
+          <img src={the1984} alt="Book cover" className="post-image" />
           {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p> */}
         </div>
   
@@ -61,28 +86,71 @@ const Book1984 = () => {
         </div>
   
         {isModalVisible && (
-          <div className="modal show">
-            <div className="modal-content-jaws">
-              <span className="close" onClick={closeModal}>&times;</span>
-              <h2>Book a Zoom Meeting</h2>
-              <form>
-                <label htmlFor="meetingName">Meeting Name:</label>
-                <input type="text" id="meetingName" name="meetingName" required />
-  
-                <label htmlFor="meetingDate">Date:</label>
-                <input type="date" id="meetingDate" name="meetingDate" required />
-  
-                <label htmlFor="meetingTime">Time:</label>
-                <input type="time" id="meetingTime" name="meetingTime" required />
-  
-                <label htmlFor="participants">Participants:</label>
-                <input type="text" id="participants" name="participants" required />
-  
-                <button type="submit" className="btn-zoom">Submit</button>
-              </form>
-            </div>
-          </div>
-        )}
+  <div className="modal show">
+    <div className="modal-content-jaws">
+      <span className="close" onClick={closeModal}>&times;</span>
+      <h2>Book a Zoom Meeting</h2>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="meetingName">Meeting Name:</label>
+        <input 
+          type="text" 
+          id="meetingName" 
+          name="meetingName" 
+          value={meetingDetails.meetingName} 
+          onChange={handleChange} 
+          required 
+        />
+
+        <label htmlFor="meetingDate">Date:</label>
+        <input 
+          type="date" 
+          id="meetingDate" 
+          name="meetingDate" 
+          value={meetingDetails.meetingDate} 
+          onChange={handleChange} 
+          required 
+        />
+
+        <label htmlFor="meetingTime">Time:</label>
+        <input 
+          type="time" 
+          id="meetingTime" 
+          name="meetingTime" 
+          value={meetingDetails.meetingTime} 
+          onChange={handleChange} 
+          required 
+        />
+
+        <label htmlFor="participants">Participants:</label>
+        <input 
+          type="text" 
+          id="participants" 
+          name="participants" 
+          value={meetingDetails.participants} 
+          onChange={handleChange} 
+          required 
+        />
+
+        <button type="submit" className="btn-zoom">Submit</button>
+      </form>
+    </div>
+  </div>
+)}
+
+{isConfirmationVisible && (
+  <div className="modal show">
+    <div className="modal-content-jaws">
+      <span className="close" onClick={closeConfirmation}>&times;</span>
+      <h2>Confirmation</h2>
+      <p><strong>Meeting Name:</strong> {meetingDetails.meetingName}</p>
+      <p><strong>Date:</strong> {meetingDetails.meetingDate}</p>
+      <p><strong>Time:</strong> {meetingDetails.meetingTime}</p>
+      <p><strong>Participants:</strong> {meetingDetails.participants}</p>
+      <p><strong>Zoom Link:</strong> <a href={zoomLink} target="_blank" rel="noopener noreferrer">{zoomLink}</a></p>
+      <button className="btn-zoom" onClick={closeConfirmation}>Close</button>
+    </div>
+  </div>
+)}
       </div>
     );
   };

@@ -32,6 +32,9 @@ const Romance = () => {
     setModalSection('thankYou');
     setProgress(100); 
   };
+
+  const currentPath = window.location.pathname;
+
   
     return (
       <div className="container" id="content-all">
@@ -39,6 +42,59 @@ const Romance = () => {
           <h1>Romance</h1>
         </div>
         <div className="marketplace-content">
+        <div className="sidebar-overlay">
+              <div className="sidebar">
+                <div className="facet-group">
+                  <h3>Filter</h3>
+                  <div className="facet">
+                    <input
+                      type="checkbox"
+                      id="new"
+                      onChange={() => (window.location.href = '/Bookbabble/Sales')}
+                      checked={currentPath === '/Bookbabble/Sales'}
+                    />
+                    <label htmlFor="new">New</label>
+                  </div>
+                  <div className="facet">
+                    <input
+                      type="checkbox"
+                      id="romance"
+                      onChange={() => (window.location.href = '/Bookbabble/Romance')}
+                      checked={currentPath === '/Bookbabble/Romance'}
+                    />
+                    <label htmlFor="romance">Romance</label>
+                  </div>
+                  <div className="facet">
+                    <input
+                      type="checkbox"
+                      id="action"
+                      onChange={() => (window.location.href = '/Bookbabble/Action')}
+                      checked={currentPath === '/Bookbabble/Action'}
+                    />
+                    <label htmlFor="action">Action</label>
+                  </div>
+                  <div className="facet">
+                    <input
+                      type="checkbox"
+                      id="education"
+                      onChange={() => (window.location.href = '/Bookbabble/Education')}
+                      checked={currentPath === '/Bookbabble/Education'}
+                    />
+                    <label htmlFor="education">Education</label>
+                  </div>
+                  <div className="facet">
+                    <input
+                      type="checkbox"
+                      id="new"
+                      onChange={() => (window.location.href = '/Bookbabble/Marketplace')}
+                      checked={currentPath === '/Bookbabble/Marketplace'}
+                    />
+                    <label htmlFor="new">Marketplace</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           <div className="row book-item">
             <div className="col-md-4 order-md-1">
               <img src="./pics/DBD.jpg" className="img-fluid" alt="book"/>

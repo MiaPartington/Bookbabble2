@@ -1,10 +1,12 @@
 .marketplace-header {
     text-align: center;
     margin: 2rem 0;
+    padding-bottom: 5px;
 }
 .book-item {
     margin-bottom: 2rem;
 }
+
 
 .modal-progress {
     height: 5px;
@@ -44,3 +46,53 @@
     margin-top: 10px;
     color: #333;
   }
+
+  .sidebar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: auto;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.sidebar {
+    margin-top: 180px;
+    margin-left: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    z-index: 1000;
+}
+
+.facet-group {
+    margin-bottom: 20px;
+}
+
+.facet-group h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.facet {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.facet input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.facet label {
+    cursor: pointer;
+    margin: 0;
+}
