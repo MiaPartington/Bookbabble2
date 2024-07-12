@@ -46,58 +46,63 @@ const Marketplace = () => {
         </div>
         <div className="row">
          
-            <div className="sidebar-overlay">
-              <div className="sidebar">
-                <div className="facet-group">
-                  <h3>Filter</h3>
-                  <div className="facet">
-                    <input
-                      type="checkbox"
-                      id="new"
-                      onChange={() => (window.location.href = '/Bookbabble/Sales')}
-                      checked={currentPath === '/Bookbabble/Sales'}
-                    />
-                    <label htmlFor="new">New</label>
-                  </div>
-                  <div className="facet">
-                    <input
-                      type="checkbox"
-                      id="romance"
-                      onChange={() => (window.location.href = '/Bookbabble/Romance')}
-                      checked={currentPath === '/Bookbabble/Romance'}
-                    />
-                    <label htmlFor="romance">Romance</label>
-                  </div>
-                  <div className="facet">
-                    <input
-                      type="checkbox"
-                      id="action"
-                      onChange={() => (window.location.href = '/Bookbabble/Action')}
-                      checked={currentPath === '/Bookbabble/Action'}
-                    />
-                    <label htmlFor="action">Action</label>
-                  </div>
-                  <div className="facet">
-                    <input
-                      type="checkbox"
-                      id="education"
-                      onChange={() => (window.location.href = '/Bookbabble/Education')}
-                      checked={currentPath === '/Bookbabble/Education'}
-                    />
-                    <label htmlFor="education">Education</label>
-                  </div>
-                  <div className="facet">
-                    <input
-                      type="checkbox"
-                      id="new"
-                      onChange={() => (window.location.href = '/Bookbabble/Marketplace')}
-                      checked={currentPath === '/Bookbabble/Marketplace'}
-                    />
-                    <label htmlFor="new">Marketplace</label>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="sidebar-overlay">
+  <div className="sidebar">
+    <div className="facet-group">
+      <h3>Filter</h3>
+      <div className="facet">
+        <input
+          type="radio"
+          id="new"
+          name="category"
+          onChange={() => (window.location.href = '/Bookbabble/Sales')}
+          checked={currentPath === '/Bookbabble/Sales'}
+        />
+        <label htmlFor="new">New</label>
+      </div>
+      <div className="facet">
+        <input
+          type="radio"
+          id="romance"
+          name="category"
+          onChange={() => (window.location.href = '/Bookbabble/Romance')}
+          checked={currentPath === '/Bookbabble/Romance'}
+        />
+        <label htmlFor="romance">Romance</label>
+      </div>
+      <div className="facet">
+        <input
+          type="radio"
+          id="action"
+          name="category"
+          onChange={() => (window.location.href = '/Bookbabble/Action')}
+          checked={currentPath === '/Bookbabble/Action'}
+        />
+        <label htmlFor="action">Action</label>
+      </div>
+      <div className="facet">
+        <input
+          type="radio"
+          id="education"
+          name="category"
+          onChange={() => (window.location.href = '/Bookbabble/Education')}
+          checked={currentPath === '/Bookbabble/Education'}
+        />
+        <label htmlFor="education">Education</label>
+      </div>
+      <div className="facet">
+        <input
+          type="radio"
+          id="marketplace"
+          name="category"
+          onChange={() => (window.location.href = '/Bookbabble/Marketplace')}
+          checked={currentPath === '/Bookbabble/Marketplace'}
+        />
+        <label htmlFor="marketplace">Marketplace</label>
+      </div>
+    </div>
+  </div>
+</div>
 
           <div className="col-md-12">
             <div className="marketplace-content">
@@ -112,6 +117,10 @@ const Marketplace = () => {
   About the Author:
   Cormac McCarthy (1933-2023) was an American author renowned for his distinctive writing style and exploration of themes like survival and morality, with notable works including "The Road" and "No Country for Old Men."</p>
                   <button className="btn btn-dark" onClick={() => showModal('The Road', theRoad, 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+                  <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                </span>
                 </div>
               </div>
               <div className="row book-item">
@@ -122,6 +131,10 @@ const Marketplace = () => {
   About the Author:
   George Orwell (1903-1950) was a British writer and journalist known for his critical works on social injustice and totalitarianism, including "1984" and "Animal Farm."</p>
                   <button className="btn btn-dark" onClick={() => showModal('1984', the1984, 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+                  <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                  </span>
                 </div>
                 <div className="col-md-4 order-md-2">
                   <img src={the1984} className="img-fluid" alt="book" />
@@ -138,6 +151,10 @@ const Marketplace = () => {
   About the Author:
   Peter Benchley (1940-2006) was an American author best known for writing "Jaws," which was later adapted into a highly successful film by Steven Spielberg."</p>
                   <button className="btn btn-dark" onClick={() => showModal('Jaws', jaws, 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+                  <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -192,7 +209,11 @@ const Marketplace = () => {
                           <label htmlFor="shippingAddress">Shipping Address</label>
                           <input type="text" className="form-control" id="shippingAddress" placeholder="Enter shipping address" />
                         </div>
-                        <button type="button" className="btn btn-dark" onClick={handleSubmitClick}>Submit</button>
+                        <div>
+                          <label htmlFor='emailAddress'>Email Address</label>
+                          <input type='text' className='form-control' id='emailAddress' placeholder='Enter email address'/>
+                        </div>
+                        <button type="button" className="btn btn-dark move-down" onClick={handleSubmitClick}>Submit</button>
                       </form>
                     </div>
                   )}

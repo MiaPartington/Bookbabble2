@@ -96,3 +96,46 @@
     cursor: pointer;
     margin: 0;
 }
+
+.info-bubble-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .info-bubble {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; 
+    left: 50%;
+    margin-left: -100px; 
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .info-bubble::after {
+    content: '';
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .info-bubble-container:hover .info-bubble {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .move-down {
+    margin-top: 20px; 
+  }

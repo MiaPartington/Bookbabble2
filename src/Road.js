@@ -131,7 +131,10 @@ const Road = () => {
   <div className="modal show">
     <div className="modal-content-jaws">
       <span className="close" onClick={closeConfirmation}>&times;</span>
-      <h2>Confirmation</h2>
+      <h2 className='custom-h2'>Confirmation <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble small-info-bubble">Please use the link below to join the meeting.</span>
+                </span></h2>
       <p><strong>Meeting Name:</strong> {meetingDetails.meetingName}</p>
       <p><strong>Date:</strong> {meetingDetails.meetingDate}</p>
       <p><strong>Time:</strong> {meetingDetails.meetingTime}</p>

@@ -212,3 +212,14 @@
   .btn-back:hover {
     background-color: #bbb; 
   }
+
+  .small-info-bubble {
+    font-size: 0.75em; 
+  }
+  
+  .custom-h2 {
+    margin: 0;
+    padding: 0;
+    text-align: left; 
+    margin-bottom: 10px;
+  }

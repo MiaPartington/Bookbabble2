@@ -48,7 +48,7 @@ const Romance = () => {
                   <h3>Filter</h3>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="new"
                       onChange={() => (window.location.href = '/Bookbabble/Sales')}
                       checked={currentPath === '/Bookbabble/Sales'}
@@ -57,7 +57,7 @@ const Romance = () => {
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="romance"
                       onChange={() => (window.location.href = '/Bookbabble/Romance')}
                       checked={currentPath === '/Bookbabble/Romance'}
@@ -66,7 +66,7 @@ const Romance = () => {
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="action"
                       onChange={() => (window.location.href = '/Bookbabble/Action')}
                       checked={currentPath === '/Bookbabble/Action'}
@@ -75,7 +75,7 @@ const Romance = () => {
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="education"
                       onChange={() => (window.location.href = '/Bookbabble/Education')}
                       checked={currentPath === '/Bookbabble/Education'}
@@ -84,7 +84,7 @@ const Romance = () => {
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="new"
                       onChange={() => (window.location.href = '/Bookbabble/Marketplace')}
                       checked={currentPath === '/Bookbabble/Marketplace'}
@@ -110,6 +110,10 @@ const Romance = () => {
 
 </p>
               <button className="btn btn-dark" onClick={() => showModal('Dont Back Down', './pics/DBD.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+              <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                  </span>
             </div>
           </div>
           <div className="row book-item">
@@ -127,6 +131,10 @@ const Romance = () => {
 
 </p>
               <button className="btn btn-dark" onClick={() => showModal('Blue Moon', './pics/Bmoon.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+              <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                  </span>
             </div>
           </div>
           <div className="row book-item">
@@ -144,6 +152,10 @@ const Romance = () => {
 
 </p>
               <button className="btn btn-dark" onClick={() => showModal('NightWork', './pics/nightwork.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+              <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                  </span>
             </div>
           </div>
         </div>
@@ -197,7 +209,11 @@ const Romance = () => {
                         <label htmlFor="shippingAddress">Shipping Address</label>
                         <input type="text" className="form-control" id="shippingAddress" placeholder="Enter shipping address" />
                       </div>
-                      <button type="button" className="btn btn-dark" onClick={handleSubmitClick}>Submit</button>
+                      <div>
+                          <label htmlFor='emailAddress'>Email Address</label>
+                          <input type='text' className='form-control' id='emailAddress' placeholder='Enter email address'/>
+                        </div>
+                      <button type="button" className="btn btn-dark move-down" onClick={handleSubmitClick}>Submit</button>
                     </form>
                   </div>
                 )}

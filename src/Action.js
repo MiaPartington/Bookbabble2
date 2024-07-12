@@ -49,7 +49,7 @@ const Action = () => {
                   <h3>Filter</h3>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="new"
                       onChange={() => (window.location.href = '/Bookbabble/Sales')}
                       checked={currentPath === '/Bookbabble/Sales'}
@@ -58,7 +58,7 @@ const Action = () => {
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="romance"
                       onChange={() => (window.location.href = '/Bookbabble/Romance')}
                       checked={currentPath === '/Bookbabble/Romance'}
@@ -67,7 +67,7 @@ const Action = () => {
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="action"
                       onChange={() => (window.location.href = '/Bookbabble/Action')}
                       checked={currentPath === '/Bookbabble/Action'}
@@ -76,7 +76,7 @@ const Action = () => {
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="education"
                       onChange={() => (window.location.href = '/Bookbabble/Education')}
                       checked={currentPath === '/Bookbabble/Education'}
@@ -85,7 +85,7 @@ const Action = () => {
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="new"
                       onChange={() => (window.location.href = '/Bookbabble/Marketplace')}
                       checked={currentPath === '/Bookbabble/Marketplace'}
@@ -104,6 +104,10 @@ const Action = () => {
             <h2>The Hunger Games</h2>
             <p>"The Hunger Games" by Suzanne Collins is a dystopian novel set in a future where the totalitarian nation of Panem is divided into twelve districts. Each year, the government selects a boy and girl from each district to participate in a televised death match called the Hunger Games. The story follows sixteen-year-old Katniss Everdeen, who volunteers to take her sister's place in the Games. Katniss must rely on her survival skills, instincts, and reluctant alliances as she navigates the brutal competition. The novel explores themes of sacrifice, oppression, and the effects of violence, presenting a gripping and thought-provoking narrative that captivates readers from start to finish.</p>
             <button className="btn btn-dark" onClick={() => showModal('The Hunger Games', './pics/hgames.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                </span>
           </div>
         </div>
         <div className="row book-item">
@@ -114,6 +118,10 @@ const Action = () => {
             <h2>Six of Crows</h2>
             <p>"Six of Crows" by Leigh Bardugo is a gripping fantasy novel set in the Grishaverse. The story follows Kaz Brekker, a criminal mastermind in the bustling city of Ketterdam, who is tasked with assembling a team of misfits and outcasts for an impossible heist. The team includes Inej, a spy known as the Wraith; Jesper, a sharpshooter with a gambling problem; Nina, a Grisha with magical abilities; Matthias, a disgraced soldier seeking redemption; and Wylan, a runaway with a talent for demolition. Together, they must break into the impenetrable Ice Court and retrieve a valuable hostage. With complex characters, intricate plotting, and high-stakes action, "Six of Crows" is a thrilling adventure filled with twists and turns.</p>
             <button className="btn btn-dark" onClick={() => showModal('Six of Crows', './pics/soc.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                </span>
           </div>
         </div>
         <div className="row book-item">
@@ -124,6 +132,10 @@ const Action = () => {
             <h2>Throne of Glass</h2>
             <p>"Throne of Glass" by Sarah J. Maas is a captivating fantasy novel that follows the journey of Celaena Sardothien, a skilled assassin who is offered a chance at freedom. After being imprisoned in the salt mines of Endovier, Celaena is summoned to the castle by Crown Prince Dorian. He offers her a deal: compete in a deadly competition to become the king's champion and win her freedom. As Celaena navigates the treacherous world of court politics, she uncovers dark secrets and faces formidable opponents. With the help of her new allies, including the loyal Captain of the Guard, Chaol, and the enigmatic prince, she must confront her past and fight for her future. "Throne of Glass" combines action, romance, and magic in a richly imagined world, making it a thrilling start to an epic series.</p>
             <button className="btn btn-dark" onClick={() => showModal('Throne of Glass', './pics/tog.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                </span>
           </div>
         </div>
       </div>
@@ -177,7 +189,11 @@ const Action = () => {
                         <label htmlFor="shippingAddress">Shipping Address</label>
                         <input type="text" className="form-control" id="shippingAddress" placeholder="Enter shipping address" />
                       </div>
-                      <button type="button" className="btn btn-dark" onClick={handleSubmitClick}>Submit</button>
+                      <div>
+                          <label htmlFor='emailAddress'>Email Address</label>
+                          <input type='text' className='form-control' id='emailAddress' placeholder='Enter email address'/>
+                        </div>
+                      <button type="button" className="btn btn-dark move-down" onClick={handleSubmitClick}>Submit</button>
                     </form>
                   </div>
                 )}

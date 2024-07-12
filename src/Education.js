@@ -51,7 +51,7 @@ const Education = () => {
                   <h3>Filter</h3>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="new"
                       onChange={() => (window.location.href = '/Bookbabble/Sales')}
                       checked={currentPath === '/Bookbabble/Sales'}
@@ -60,7 +60,7 @@ const Education = () => {
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="romance"
                       onChange={() => (window.location.href = '/Bookbabble/Romance')}
                       checked={currentPath === '/Bookbabble/Romance'}
@@ -69,7 +69,7 @@ const Education = () => {
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="action"
                       onChange={() => (window.location.href = '/Bookbabble/Action')}
                       checked={currentPath === '/Bookbabble/Action'}
@@ -78,7 +78,7 @@ const Education = () => {
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="education"
                       onChange={() => (window.location.href = '/Bookbabble/Education')}
                       checked={currentPath === '/Bookbabble/Education'}
@@ -87,7 +87,7 @@ const Education = () => {
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="new"
                       onChange={() => (window.location.href = '/Bookbabble/Marketplace')}
                       checked={currentPath === '/Bookbabble/Marketplace'}
@@ -106,6 +106,10 @@ const Education = () => {
             <h2>Calculus Early Vectors</h2>
             <p>"Calculus and Early Vectors" is a foundational textbook that introduces the principles of calculus alongside vector analysis. It covers topics such as limits, derivatives, integrals, and the fundamental theorems of calculus, while also integrating vector concepts like vector operations, dot products, and cross products. The book emphasizes the application of calculus in solving real-world problems involving vectors, making it essential for students in mathematics, physics, and engineering. Through a combination of theoretical explanations, worked examples, and exercises, "Calculus and Early Vectors" aims to build a solid understanding of both calculus and vector analysis from the ground up.</p>
             <button className="btn btn-dark" onClick={() => showModal('Calculus Early Vectors', './pics/calc.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                </span>
           </div>
         </div>
         <div className="row book-item">
@@ -116,6 +120,10 @@ const Education = () => {
             <h2>Education Psychology</h2>
             <p>"Educational Psychology" is a field of study that explores how people learn and the best practices for teaching. It examines the cognitive, emotional, and social processes involved in learning throughout the lifespan. Topics include motivation, development, classroom management, assessment, and instructional strategies. By understanding these principles, educators can create more effective learning environments that cater to the diverse needs of students. The field integrates theories from psychology to address practical issues in education, aiming to improve educational outcomes and foster a supportive atmosphere for both teachers and students.</p>
             <button className="btn btn-dark" onClick={() => showModal('Education Psychology', './pics/edu.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                </span>
           </div>
         </div>
         <div className="row book-item">
@@ -126,6 +134,10 @@ const Education = () => {
             <h2>Oxford Dictionary</h2>
             <p>"The Oxford Dictionary" is a comprehensive and authoritative reference work that provides definitions, pronunciations, and detailed information on the usage of the English language. Renowned for its scholarly rigor and extensive coverage, it includes thousands of words, phrases, and meanings, ranging from everyday vocabulary to specialized terms across various fields. The dictionary also offers historical insights through etymologies, tracing the origins and evolution of words. Frequently updated to reflect contemporary language changes, "The Oxford Dictionary" is an essential resource for students, writers, academics, and anyone seeking a deep understanding of English.</p>
             <button className="btn btn-dark" onClick={() => showModal('Oxford Dictionary', './pics/oxf.jpg', 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                </span>
           </div>
         </div>
       </div>
@@ -179,7 +191,11 @@ const Education = () => {
                         <label htmlFor="shippingAddress">Shipping Address</label>
                         <input type="text" className="form-control" id="shippingAddress" placeholder="Enter shipping address" />
                       </div>
-                      <button type="button" className="btn btn-dark" onClick={handleSubmitClick}>Submit</button>
+                      <div>
+                          <label htmlFor='emailAddress'>Email Address</label>
+                          <input type='text' className='form-control' id='emailAddress' placeholder='Enter email address'/>
+                        </div>
+                      <button type="button" className="btn btn-dark move-down" onClick={handleSubmitClick}>Submit</button>
                     </form>
                   </div>
                 )}

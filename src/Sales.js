@@ -51,7 +51,7 @@ const [modalData, setModalData] = useState({ name: '', image: '', description: '
                   <h3>Filter</h3>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="new"
                       onChange={() => (window.location.href = '/Bookbabble/Sales')}
                       checked={currentPath === '/Bookbabble/Sales'}
@@ -60,7 +60,7 @@ const [modalData, setModalData] = useState({ name: '', image: '', description: '
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="romance"
                       onChange={() => (window.location.href = '/Bookbabble/Romance')}
                       checked={currentPath === '/Bookbabble/Romance'}
@@ -69,7 +69,7 @@ const [modalData, setModalData] = useState({ name: '', image: '', description: '
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="action"
                       onChange={() => (window.location.href = '/Bookbabble/Action')}
                       checked={currentPath === '/Bookbabble/Action'}
@@ -78,7 +78,7 @@ const [modalData, setModalData] = useState({ name: '', image: '', description: '
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="education"
                       onChange={() => (window.location.href = '/Bookbabble/Education')}
                       checked={currentPath === '/Bookbabble/Education'}
@@ -87,7 +87,7 @@ const [modalData, setModalData] = useState({ name: '', image: '', description: '
                   </div>
                   <div className="facet">
                     <input
-                      type="checkbox"
+                      type="radio"
                       id="new"
                       onChange={() => (window.location.href = '/Bookbabble/Marketplace')}
                       checked={currentPath === '/Bookbabble/Marketplace'}
@@ -105,6 +105,10 @@ const [modalData, setModalData] = useState({ name: '', image: '', description: '
             <h2>Dreamland</h2>
             <p>"Dreamland" by Nicholas Sparks is a touching and evocative romance novel that intertwines the lives of two couples. Colby Mills, a farmer with dreams of a music career, meets Morgan Lee, an aspiring singer with big city aspirations, while performing in a bar in Florida. Their whirlwind romance blossoms against the backdrop of their personal dreams and struggles. Simultaneously, the story follows Beverly, a young woman fleeing from an abusive marriage with her six-year-old son. As Colby and Morgan's relationship deepens, their lives become unexpectedly connected to Beverly's journey, leading to a poignant and dramatic conclusion. "Dreamland" explores themes of love, dreams, and the courage to face life's challenges.</p>
             <button className="btn btn-dark" onClick={() => showModal('Dreamland', dreamLand, 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                </span>
           </div>
         </div>
         <div className="row book-item">
@@ -115,6 +119,10 @@ const [modalData, setModalData] = useState({ name: '', image: '', description: '
             <h2>House of Flame and Shadow</h2>
             <p>"House of Flame and Shadow" by Sarah J. Maas is the third book in the Crescent City series. It follows Bryce Quinlan and Hunt Athalar as they navigate the intricate and dangerous political landscape of their world. The story delves deeper into their quest for answers about their pasts and the growing threats to their city. With allies and enemies both old and new, Bryce and Hunt must confront ancient powers and hidden secrets that could change their lives and the fate of Crescent City forever. This installment combines action, romance, and rich world-building, continuing the epic saga with high stakes and emotional depth.</p>
             <button className="btn btn-dark" onClick={() => showModal('House of Flame and Shadow', hofas, 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                </span>
           </div>
         </div>
         <div className="row book-item">
@@ -125,6 +133,10 @@ const [modalData, setModalData] = useState({ name: '', image: '', description: '
             <h2>Mercury Rising</h2>
             <p>"Mercury Rising" by R.W.W. Greene is a science fiction novel set in an alternate 1970s where a failed Apollo mission results in Earth being threatened by an alien invasion. This geopolitical crisis forces humanity to unite and develop a space defense system. The protagonist, Brooklyn Lamontagne, is a down-and-out con artist who finds himself unexpectedly recruited into this interstellar conflict. As he navigates this new reality, Brooklyn grapples with his past, confronts the possibility of redemption, and plays a crucial role in the fight against the extraterrestrial threat. The novel blends retro-futurism, action, and humor, creating a compelling story of survival and second chances.</p>
             <button className="btn btn-dark" onClick={() => showModal('Mercury Rising', mercuryRising, 'For 6.99 borrow this book for 2 weeks.')}>Borrow</button>
+            <span className="info-bubble-container ms-2">
+                  <i className="bi bi-question-circle"></i>
+                  <span className="info-bubble">After your two weeks are up, we will email you with instructions to send the book back.</span>
+                </span>
           </div>
         </div>
         </div>
@@ -209,7 +221,11 @@ const [modalData, setModalData] = useState({ name: '', image: '', description: '
                         <label htmlFor="shippingAddress">Shipping Address</label>
                         <input type="text" className="form-control" id="shippingAddress" placeholder="Enter shipping address" />
                       </div>
-                      <button type="button" className="btn btn-dark" onClick={handleSubmitClick}>Submit</button>
+                      <div>
+                          <label htmlFor='emailAddress'>Email Address</label>
+                          <input type='text' className='form-control' id='emailAddress' placeholder='Enter email address'/>
+                        </div>
+                      <button type="button" className="btn btn-dark move-down" onClick={handleSubmitClick}>Submit</button>
                     </form>
                   </div>
                 )}
