@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Bookbabble2/static/css/main.4f38b29d.css",
-    "main.js": "/Bookbabble2/static/js/main.d6ff0567.js",
+    "main.css": "/Bookbabble2/static/css/main.890ed2f3.css",
+    "main.js": "/Bookbabble2/static/js/main.40be8709.js",
     "static/media/the1984.jpg": "/Bookbabble2/static/media/the1984.b6c3550a1523a9d7e010.jpg",
     "static/media/hofas.jpg": "/Bookbabble2/static/media/hofas.97aea254c11a75f6c82d.jpg",
     "static/media/theRoad.jpg": "/Bookbabble2/static/media/theRoad.30c10560f411a1434f99.jpg",
@@ -10,11 +10,11 @@
     "static/media/mercuryRising.jpg": "/Bookbabble2/static/media/mercuryRising.18b86e19ddc52ab082e0.jpg",
     "static/media/books.jpg": "/Bookbabble2/static/media/books.758a60c7818c20c2f972.jpg",
     "index.html": "/Bookbabble2/index.html",
-    "main.4f38b29d.css.map": "/Bookbabble2/static/css/main.4f38b29d.css.map",
-    "main.d6ff0567.js.map": "/Bookbabble2/static/js/main.d6ff0567.js.map"
+    "main.890ed2f3.css.map": "/Bookbabble2/static/css/main.890ed2f3.css.map",
+    "main.40be8709.js.map": "/Bookbabble2/static/js/main.40be8709.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f38b29d.css",
-    "static/js/main.d6ff0567.js"
+    "static/css/main.890ed2f3.css",
+    "static/js/main.40be8709.js"
   ]
 }
